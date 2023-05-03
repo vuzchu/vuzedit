@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:description" content="Resourse editing" />
+    <meta property="og:image" content="https://vuzchu.github.io/vuzedit/img/banner/web.png" />
+    <meta name="description" content="VuzEditor">
+    <meta name="keywords" content="Resourse, editing, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Vuz | Resouse</title>
+
+
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin for phone -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="" alt=""></a>
+        </div>
+
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./project-resoure.html">Resourse</a></li>
+                <li><a href="#">Resourse</a>
+                    <ul class="header__menu__dropdown">
+
+                        <li><a href="./project-resoure.html">Pack Editing</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#blogger">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+
+
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> chuvuz@gmail.com</li>
+                <li>Free Use Resouse</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> chuvuz@gmail.com</li>
+                                <li><i class="fa fa-bank"></i> MB BanK : 072010836009</li>
+                                <li>Free Use Resouse</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Header menu pc -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#featured-project">Project</a></li>
+                            <li><a href="#">Resourse</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="project-resoure.html">Pack Editing</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#blogger">BLOG</a></li>
+                            <li><a href="https://chuvuz.carrd.co/" target="_blank">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All Resourse</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Raw Cut</a></li>
+                            <li><a href="#">CC Pack</a></li>
+                            <li><a href="#">Plugin Pack</a></li>
+                            <li><a href="#">Overlay Pack</a></li>
+                            <li><a href="#">Raw Pack</a></li>
+                            <li><a href="#">Software Pack</a></li>
+                            <li><a href="#">Script Pack</a></li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <a href="https://discord.gg/sRjZjtQZpq" target="_blank">
+                        <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                            <div class="hero__text">
+                                <!-- <span>FRUIT FRESH</span>
+                            <h2>Vegetable <br />100% Organic</h2>
+                            <p>Free Pickup and Delivery Available</p> -->
+                                <!-- <a href="" class="primary-btn">Join Us</a> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/ccpack.png">
+                            <h5><a href="https://drive.google.com/drive/folders/1sFDkIBX54MQAGnVLVJ5MNzYyuOjtxD_U"
+                                    target="_blank">CCPack</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/overlay.png">
+                            <h5><a href="https://drive.google.com/file/d/1tR00oKIEmVgs-IwooQ7t0XVKQRmt5up0/view"
+                                    target="_blank">Overlay</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/rawcut.png">
+                            <h5><a href="" target="_blank">Raw Cut</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/plugin.png">
+                            <h5><a href="https://drive.google.com/drive/folders/1Dj5Z5gDFkXQrjj6HPp8NDBVHnmF0nmcU"
+                                    target="_blank">Plugin</a></h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad" id="featured-project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Project</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".basil">Basil</li>
+                            <li data-filter=".xsense">Xsense</li>
+                            <li data-filter=".kana-senpai">Kana Senpai</li>
+                            <li data-filter=".wyrux">Wyrux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row featured__filter">
+
+                <!--Basil Project-->
+
+                <!--Basil Hisoka money-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix basil ">
+
+                    <a href="https://drive.google.com/drive/folders/1WcOFAJjYoU6cZrqUX2zeCfZ7gll46yjb?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/basil.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li> -->
+                                    <!-- <li><a href="#"><i class="fa fa-eye"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Basil - Money</h6>
+                                <h5>Download</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--Basil HALLUCINATION-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix basil ">
+                    <a href="https://drive.google.com/drive/folders/11LcVxxgrAfF9-9CFkF8R6AbmK3dibjqu?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/basil-HALLUCINATION.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Basil - Hallucination</h6>
+                                <h5>Download</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--basil-anger-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix basil ">
+                    <a href="https://drive.google.com/drive/folders/11LcVxxgrAfF9-9CFkF8R6AbmK3dibjqu?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/basil-anger.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Basil - Anger</h6>
+                                <h5>Download</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--basil-doubt-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix basil ">
+                    <a href="https://drive.google.com/drive/folders/1SeKuQ-dsF91Mgd_yocoAtXZChrI1_JtS?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/basil-doubt.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Basil - Doubt</h6>
+                                <h5>Download</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--Xsense Project-->
+
+                <!--Xsense Disturbia-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xsense ">
+                    <a href="https://drive.google.com/file/d/1-l4QmliaKOU0yTlslCkPbFWMsk_Ms3Nz/view?usp=sharing "
+                        target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/xsense-Disturbia.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Xsense - Disturbia</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Xsense war of heart-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xsense ">
+                    <a href="https://drive.google.com/file/d/1BNugfjxG7Hx2WQUBNCDnix8B58p4lcXM/view" target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/xsensen-warofheart.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Xsense - War Of Heart</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Xsense  which one are you right now-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xsense ">
+                    <a href="https://mega.nz/file/kbcVnKrC#UPGWxCUvaLKdDoZ0jq85O8DJj6-usGodvX54gu0Q0C0" target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/xsense-which.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Xsense - which one are you right now</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Xsense  Root-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xsense ">
+                    <a href="https://mega.nz/file/AFt00BbS#HJK9anffBvD7Whsye54kHfEyIMZImJFRHeXmkoJLsIA" target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/xsense.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Xsense - Root</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Kana Senpai Project-->
+
+                <!--Kana Senpai Eren's War-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix kana-senpai ">
+                    <a href="https://drive.google.com/file/d/1gLWfeQPToM4SaSSpaeM6Vc6nMX8IQRDh/view?usp=share_link"
+                        target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kana-eren.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Kana Senpai - Eren's War</h6>
+                                <h5>Pass : Shared by TEN3T</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Kana Senpai Butcher-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix kana-senpai ">
+                    <a href="https://drive.google.com/drive/folders/1YG--eYc8aULAF3JABUkc1Srk-04NphBq?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kana-Butcher.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+                                    <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Kana Senpai - Butcher</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Kana Senpai 低音の悪魔-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix kana-senpai ">
+                    <a href="https://drive.google.com/file/d/1mX_h2X0wbCT35KWP4IzFoyHmw0KW_g-H/view?usp=sharing"
+                        target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/kana-低音の悪魔.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Kana Senpai - 低音の悪魔</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!--Wyrux Project-->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix wyrux ">
+                    <a href="https://mega.nz/file/61oVQTAK#9zFHvJtrZjp3HXUqewKXkE1ISyi4VtHvSjf2Gvgd56I" target="_blank">
+                        <div class="featured__item">
+
+                            <div class="featured__item__pic set-bg" data-setbg="img/featured/wyrux-intheend.png">
+                                <ul class="featured__item__pic__hover">
+                                    <li><i class="fa fa-download"></i></li>
+
+                                </ul>
+                            </div>
+                            <div class="featured__item__text">
+                                <h6>Wyrux - In The End</h6>
+                                <h5>Download</h5>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="" target="_blank">
+                        <div class="banner__pic">
+                            <img src="img/banner/web.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="https://discord.com/invite/sRjZjtQZpq" target="_blank">
+                        <div class="banner__pic">
+                            <img src="img/banner/discord.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <!--  -->
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section id="blogger" class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="" target="_blank">
+                        <div class="blog__item">
+                            <div class="blog__item__pic">
+                                <img src="img/blog/amv.png" alt="">
+                            </div>
+                            <div class="blog__item__text">
+                                <ul>
+                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                    <li><i class="fa fa-comment-o"></i> 5</li>
+                                </ul>
+                                <h5><a href="#">What is amv?</a></h5>
+                                <p>An Anime Music Video, commonly abbreviated as AMV, is a fan-made video that combines
+                                    footage
+                                    from anime</p>
+                            </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog__item">
+                    <div class="blog__item__pic">
+                        <img src="img/blog/gfx.png" alt="">
+                    </div>
+                    <div class="blog__item__text">
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                            <li><i class="fa fa-comment-o"></i> 5</li>
+                        </ul>
+                        <h5><a href="#">What is gfx?</a></h5>
+                        <p>"GFX" stands for "graphics" in the context of designing Anime graphics. GFX in Anime design
+                            typically refers to digital graphics, such as logos, banners, backgrounds, and other types
+                            of visual elements used in creating AMVs or Anime-related content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="blog__item">
+                    <div class="blog__item__pic">
+                        <img src="img/blog/mep.png" alt="">
+                    </div>
+                    <div class="blog__item__text">
+                        <ul>
+                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                            <li><i class="fa fa-comment-o"></i> 5</li>
+                        </ul>
+                        <h5><a href="#">What is Mep?</a></h5>
+                        <p>MEP stands for "Multi Editor Project" in the context of editing Anime Music Videos (AMVs). .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <!-- <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div> -->
+                        <ul>
+                            <li>Address: Thanh Xuan , Ha Noi</li>
+                            <li>Phone: 0916408797</li>
+                            <li>Email: chuvuz04112001@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <!-- <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul> -->
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function scroll_to_element(element) {
+            var offset = 10; // Điều chỉnh khoảng cách giữa phần tử và đỉnh của trang web tại đây
+            var bodyRect = document.body.getBoundingClientRect().top;
+            var elementRect = element.getBoundingClientRect().top;
+            var elementPosition = elementRect - bodyRect;
+            var offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+
+        var link = document.querySelector('a[href="#featured-project"]');
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var section = document.querySelector('#featured-project');
+            scroll_to_element(section);
+        });
+    </script>
+
+
+</body>
+
+</html>
