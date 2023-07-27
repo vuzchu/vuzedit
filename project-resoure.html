@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="/js/project_resoure.js"></script>
 </head>
 
 <body>
@@ -219,7 +220,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/bgp.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -277,63 +278,19 @@
 
                     <div class="row">
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
 
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-1.png">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
-                                                target="_blank"><i class="fa fa-download"></i></a></li>
-                                        <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>-->
-                                        <li><a href="#"><i class="fa fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
 
-                                    <h5>R1XE PACK 2</h5>
-                                </div>
-                            </div>
+                        <div id="productsContainer" class="row">
 
                         </div>
 
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
 
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/snake.png">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
-                                                target="_blank"><i class="fa fa-download"></i></a></li>
-                                        <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
 
-                                    <h5>SNAKE EDITING PACK 3</h5>
-                                </div>
-                            </div>
 
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
 
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/vini.png">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
-                                                target="_blank"><i class="fa fa-download"></i></a></li>
-                                        <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
 
-                                    <h5>vini pack 2022.</h5>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
                 </div>
@@ -411,35 +368,66 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
-
-        function searchitem() {
-
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("find");
-            value.tofilter = input.UpperCase();
-            div = document.getElementById(".col-lg-4 col-md-6 col-sm-6");
-            let l = document.getElementByTagname('a');
-
-            // let filter = document.getElementById('find').value.toUpperCase();
-
-            // let item = document.querySelectorAll('.col-lg-4 col-md-6 col-sm-6');
-
-            // let l = document.getElementByTagname('h6');
-
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
+    <script>
+        // Sample JSON data representing the products
+        const productsData = [
+            {
+                "id": 1,
+                "name": "kirixx 1",
+                "view": "https://payhip.com/b/tMPeh",
+                "image": "./img/product/Krixx.png",
+                "link": "https://mega.nz/folder/KwA1jaxR"
+            },
+            {
+                "id": 2,
+                "name": "SNAKE EDITING PACK 3",
+                "view": "https://payhip.com/b/boHUE",
+                "image": "./img/product/snake.png",
+                "link": "https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
+            },
+            {
+                "id": 3,
+                "name": "Vini Pack",
+                "view": "https://payhip.com/b/boHUE",
+                "image": "./img/product/vini.png",
+                "link": "https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
             }
+        ];
+
+        // Function to create and append product elements
+        function createProductElement(product) {
+            const productItem = document.createElement('div');
+            productItem.classList.add('col-lg-4', 'col-md-6', 'col-sm-6');
+            productItem.innerHTML = `
+            <div class="product__item">
+              <div class="product__item__pic set-bg" data-setbg="">
+                <img src="${product.image}">
+                <ul class="product__item__pic__hover">
+                  <li><a href="${product.view}" target="_blank"><i class="fa fa-eye"></i></a></li>
+                  <li><a href="${product.link}" target="_blank"><i class="fa fa-download"></i></a></li>
+                </ul>
+              </div>
+              <div class="product__item__text">
+                <h5>${product.name}</h5>
+              </div>
+            </div>
+          `;
+
+            return productItem;
         }
 
+        // Function to load products and display them on the page
+        function loadProducts() {
+            const productsContainer = document.getElementById('productsContainer');
 
+            productsData.forEach((product) => {
+                const productElement = createProductElement(product);
+                productsContainer.appendChild(productElement);
+            });
+        }
 
+        // Call the loadProducts function when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', loadProducts);
     </script>
 
 </body>
