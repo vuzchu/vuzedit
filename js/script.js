@@ -31,7 +31,7 @@ const productsData = [
     }
     ,
     {
-        "id": 4,
+        "id": 5,
         "name": "Nhantaii - Mini Pack 1",
         "view": "https://payhip.com/b/Vdzuq",
         "image": "./img/product/nhantaiminipack.png",
@@ -39,11 +39,43 @@ const productsData = [
     }
     ,
     {
-        "id": 5,
+        "id": 6,
         "name": "Shrimpy pack 1",
         "view": "https://payhip.com/b/sBzr9",
         "image": "./img/product/shrimpypack.png",
         "link": "https://cdn.discordapp.com/attachments/1087340727366848522/1102174881040310313/Shrimpy_pack_1.zip"
+    }
+    ,
+    {
+        "id": 6,
+        "name": "kytn Pack 4",
+        "view": "https://payhip.com/b/xtaQZ",
+        "image": "./img/product/kytn.png",
+        "link": "https://cdn.discordapp.com/attachments/1087340727366848522/1102175375628435496/KYTN_PACK_4.rar"
+    }
+    ,
+    {
+        "id": 7,
+        "name": "Qiwick's Pack ",
+        "view": "https://payhip.com/b/PArWB",
+        "image": "./img/product/Qiwick.png",
+        "link": "https://cdn.discordapp.com/attachments/1087340727366848522/1102159884407017482/Qiwicks_Pack.rar"
+    }
+    ,
+    {
+        "id": 8,
+        "name": "Pai's Editing Pack #1 ",
+        "view": "https://payhip.com/b/CUaTx",
+        "image": "./img/product/Pai.png",
+        "link": "https://cdn.discordapp.com/attachments/1087340727366848522/1102158884661121084/Pais_Editing_Pack_1.rar"
+    }
+    ,
+    {
+        "id": 9,
+        "name": "LUCCI PACK 1 ",
+        "view": "https://payhip.com/b/E1MlJ",
+        "image": "./img/product/LUCCI.png",
+        "link": "https://mega.nz/folder/T05UGI5R#RnT_ZJuEufAXw9Zfnr_coQ"
     }
 
 ];
