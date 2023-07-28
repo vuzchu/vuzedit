@@ -194,26 +194,7 @@
                         </ul>
                     </div>
                 </div> -->
-                <!-- <div class="col-lg-9" class="searchitem">
-                    <div class="hero__search" c>
-                        <div class="hero__search__form">
-                            <form action="#">
 
-                                <input type="text" id="find" placeholder="What do yo u need?" onkeyup="searchitem()">
-                                <button type="submit" class="site-btn">SEARCH</button>
-                            </form>
-                        </div>
-                       <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
-                            </div>
-                        </div> -->
-                <!-- </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -276,21 +257,29 @@
                     </div> -->
 
 
+                    <div class="col-lg-10 searchitem">
+                        <div class="search-container">
+                            <div class="hero__search">
+                                <div class="hero__search__form">
+                                    <form action="#">
+                                        <div class="search-bar">
+                                            <input type="text" id="searchInput" placeholder="Search for products..."
+                                                onkeyup="searchitem()">
+                                            <button type="submit" class="site-btn">SEARCH</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <div class="row">
-
-
 
                         <div id="productsContainer" class="row">
 
                         </div>
-
-
-
-
-
-
-
-
 
                     </div>
                 </div>
@@ -367,68 +356,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        // Sample JSON data representing the products
-        const productsData = [
-            {
-                "id": 1,
-                "name": "kirixx 1",
-                "view": "https://payhip.com/b/tMPeh",
-                "image": "./img/product/Krixx.png",
-                "link": "https://mega.nz/folder/KwA1jaxR"
-            },
-            {
-                "id": 2,
-                "name": "SNAKE EDITING PACK 3",
-                "view": "https://payhip.com/b/boHUE",
-                "image": "./img/product/snake.png",
-                "link": "https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
-            },
-            {
-                "id": 3,
-                "name": "Vini Pack",
-                "view": "https://payhip.com/b/boHUE",
-                "image": "./img/product/vini.png",
-                "link": "https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
-            }
-        ];
-
-        // Function to create and append product elements
-        function createProductElement(product) {
-            const productItem = document.createElement('div');
-            productItem.classList.add('col-lg-4', 'col-md-6', 'col-sm-6');
-            productItem.innerHTML = `
-            <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="">
-                <img src="${product.image}">
-                <ul class="product__item__pic__hover">
-                  <li><a href="${product.view}" target="_blank"><i class="fa fa-eye"></i></a></li>
-                  <li><a href="${product.link}" target="_blank"><i class="fa fa-download"></i></a></li>
-                </ul>
-              </div>
-              <div class="product__item__text">
-                <h5>${product.name}</h5>
-              </div>
-            </div>
-          `;
-
-            return productItem;
-        }
-
-        // Function to load products and display them on the page
-        function loadProducts() {
-            const productsContainer = document.getElementById('productsContainer');
-
-            productsData.forEach((product) => {
-                const productElement = createProductElement(product);
-                productsContainer.appendChild(productElement);
-            });
-        }
-
-        // Call the loadProducts function when the page is fully loaded
-        document.addEventListener('DOMContentLoaded', loadProducts);
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
