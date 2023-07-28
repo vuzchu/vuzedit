@@ -16,10 +16,10 @@ const productsData = [
     },
     {
         "id": 3,
-        "name": "Vini Pack",
-        "view": "https://payhip.com/b/boHUE",
-        "image": "./img/product/vini.png",
-        "link": "https://mega.nz/folder/HwpAGbSJ#weCbdJpzd9jnaeVd1yp7aQ"
+        "name": "Nhantaii - Project file bundle 1",
+        "view": "https://payhip.com/b/Pbyeu",
+        "image": "./img/product/nhantai.png",
+        "link": "https://mega.nz/folder/alYhEbKD#9_T45MqtTxQNbwSVn18tow"
     }
     ,
     {
@@ -29,6 +29,23 @@ const productsData = [
         "image": "./img/product/fye.png",
         "link": "https://mega.nz/file/ECBhVJIY#4FEsuwQQHxWD0nSIkaTJp2dOi37tNbyNv2_VL3PvQgY"
     }
+    ,
+    {
+        "id": 4,
+        "name": "Nhantaii - Mini Pack 1",
+        "view": "https://payhip.com/b/Vdzuq",
+        "image": "./img/product/nhantaiminipack.png",
+        "link": "https://mega.nz/folder/PsZylC6I#NMrYu2QRhq_KeoPRMG6pGA"
+    }
+    ,
+    {
+        "id": 5,
+        "name": "Shrimpy pack 1",
+        "view": "https://payhip.com/b/sBzr9",
+        "image": "./img/product/shrimpypack.png",
+        "link": "https://cdn.discordapp.com/attachments/1087340727366848522/1102174881040310313/Shrimpy_pack_1.zip"
+    }
+
 ];
 
 // Function to create and append product elements
