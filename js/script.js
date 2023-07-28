@@ -25,8 +25,8 @@ const productsData = [
     {
         "id": 4,
         "name": "Fyemaj Pack #1",
-        "view": "https://mega.nz/file/ECBhVJIY#4FEsuwQQHxWD0nSIkaTJp2dOi37tNbyNv2_VL3PvQgY",
-        "image": "./img/product/Fyemajpack1.png",
+        "view": "",
+        "image": "img/product/Fyemajpack1.png",
         "link": "https://mega.nz/file/ECBhVJIY#4FEsuwQQHxWD0nSIkaTJp2dOi37tNbyNv2_VL3PvQgY"
     }
 ];
