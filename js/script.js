@@ -77,6 +77,14 @@ const productsData = [
         "image": "./img/product/LUCCI.png",
         "link": "https://mega.nz/folder/T05UGI5R#RnT_ZJuEufAXw9Zfnr_coQ"
     }
+    ,
+    {
+        "id": 10,
+        "name": "Glitch pack 2 by @99glitches ",
+        "view": "https://payhip.com/b/dv41u",
+        "image": "./img/product/Glitch.png",
+        "link": "https://mega.nz/folder/GkoU0LYZ#Kocx9vCCCI-_sMB9IZQOig"
+    }
 
 ];
 
